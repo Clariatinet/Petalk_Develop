@@ -79,7 +79,7 @@ const DetailPage = () => {
         </Contents>
         <StyledTotalDiv>
           <StyledTitleDiv>
-            <StyledTitle>{post.title}</StyledTitle>
+            <StyledTitle>{post.title}타이릍이야</StyledTitle>
             <StyledInfo>
               <StyledId>{post.author && post.author.name}</StyledId>
               <LikeButton onClick={toggleLiked}>
