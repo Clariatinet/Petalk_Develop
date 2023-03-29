@@ -55,11 +55,7 @@ const MyPage: React.FC = () => {
       <MyPageUI>
         <UserCard>
           <div>내정보</div>
-          <ProfileImg
-            src="img/iconRight.png"
-            alt="Profile"
-            onClick={handleImgClick}
-          />{' '}
+          <ProfileImg src="img/profileImg.jpeg" alt="Profile" />
           <div>{`닉네임: ${user?.displayName}`}</div>
           <p>{`이메일: ${user?.email}`}</p>
           <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
