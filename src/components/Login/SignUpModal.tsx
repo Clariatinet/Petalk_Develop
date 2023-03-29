@@ -186,8 +186,8 @@ const Label = styled.label`
 
 const CompleteButton = styled.button`
   width: 30rem;
-  height: 4rem;
-  margin-top: 2rem;
+  height: 3rem;
+  /* margin-top: 2rem; */
   margin-bottom: 2rem;
   background: #f39340;
   color: white;
@@ -215,7 +215,7 @@ const StyledModal = styled(Modal)`
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  height: 50%;
+  height: 70%;
   background-color: white;
   border-radius: 2rem;
   z-index: 1;

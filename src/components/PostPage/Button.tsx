@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = ({ children, onClick }) => {
+interface props {
+  children: React.ReactNode;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+}
+
+const Button = ({ children, onClick }: props) => {
   return (
     <StyledButtonDiv>
       <StyledButton onClick={onClick}>{children}</StyledButton>
@@ -32,7 +37,8 @@ const StyledButton = styled.button`
     background-color: #e65925;
     color: #fffffc;
   }
-  text {
-    font-family: 'Noto Sans KR', sans-serif;
+  @media screen and (max-width: 768px) {
+    position: relative;
+    left: 2.5rem;
   }
 `;

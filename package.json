@@ -44,6 +44,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-swiper": "^0.1.5",
+    "react-tagify": "^0.1.4",
     "redux": "^4.2.1",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",

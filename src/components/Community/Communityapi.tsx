@@ -103,7 +103,8 @@ const Communityapi = () => {
                 <CardContent>{data.author.name}</CardContent>
               </CardName>
               <StyledHashTagDiv>
-                <StyledHashTag>#데일리</StyledHashTag>
+                <StyledHashTag>#우리아이</StyledHashTag>
+                <StyledHashTag>#내 새끼 자랑</StyledHashTag>
                 <StyledHashTag>#내 새끼 자랑</StyledHashTag>
               </StyledHashTagDiv>
             </CardBox>

@@ -55,21 +55,16 @@ const MyPage: React.FC = () => {
       <MyPageUI>
         <UserCard>
           <div>내정보</div>
-          <img
-            src={data.imgUrl || 'https://picsum.photos/1'}
+          <ProfileImg
+            src="img/iconRight.png"
             alt="Profile"
             onClick={handleImgClick}
           />{' '}
-          {/* Use imgUrl property */}
           <div>{`닉네임: ${user?.displayName}`}</div>
           <p>{`이메일: ${user?.email}`}</p>
-          <EditButton onClick={() => setModalOpen(true)}>수정하기</EditButton>
           <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
             <>
-              <img
-                src={data.imgUrl || 'https://picsum.photos/1'}
-                alt="Profile"
-              />
+              <img src="img/iconRight.png" alt="Profile" />
               <div>{`닉네임: ${user?.displayName}`}</div>
             </>
           </Modal>
@@ -240,9 +235,11 @@ const UserCard = styled.div`
   .data {
     font-size: 20px;
   }
-  text {
-    font-family: 'Noto Sans KR', sans-serif;
-  }
+`;
+
+const ProfileImg = styled.img`
+  width: 1rem;
+  object-fit: cover;
 `;
 
 const MyWrote = styled.div`
@@ -308,9 +305,6 @@ const EditButton = styled.button`
     background-color: #3f3030;
     color: #fff;
   }
-  text {
-    font-family: 'Noto Sans KR', sans-serif;
-  }
 `;
 
 const SidebarContainer = styled.div`
@@ -360,9 +354,6 @@ const UserIcon = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  text {
-    font-family: 'Noto Sans KR', sans-serif;
-  }
 `;
 
 const ModalOverlay = styled.div<{ open: boolean }>`
@@ -425,9 +416,6 @@ const ModifyModal = styled(Modal)`
     &:hover {
       background-color: #005fa3;
     }
-  }
-  text {
-    font-family: 'Noto Sans KR', sans-serif;
   }
 `;
 

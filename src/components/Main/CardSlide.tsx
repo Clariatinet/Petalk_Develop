@@ -67,18 +67,16 @@ const CardSlide: React.FC = () => {
         <SSBox>
           <LeftImage src="img/IconLeft.png"></LeftImage>
           <Stimage src="img/LOGO_OR.png"></Stimage>
-
-          <StText>안녕하세요.펫톡입니다.</StText>
-          <RightImage src="img/IconRight.png"></RightImage>
+          <StText>
+            안녕하세요. Petalk입니다 <br />
+            저희는 집사, 혹은 예비 집사들을 <br />
+            위한 커뮤니티를 가꾸려 <br />
+            노력하고 있습니다. <br />
+            많은 분들께서 이용해주셨으면 <br />
+            감사하겠습니다.
+          </StText>
         </SSBox>
       </BigBox>
-      <CpSlide>
-        <CommunitySlide />
-        <ProductSlide />
-      </CpSlide>
-
-      <NewspidSlide />
-      <Footer />
     </div>
   );
 };
@@ -96,32 +94,22 @@ const CardContainer = styled.div`
   margin-top: 3%;
   background-size: cover;
   background-position: center;
-  text {
-    font-family: 'Noto Sans KR', sans-serif;
-  }
 `;
 
 const BigBox = styled.div`
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  height: 60rem;
 `;
 
 const SmallBox = styled.div`
-  width: 70%;
-  height: 60rem;
-  display: flex;
-  flex-direction: column;
+  width: 62rem;
 `;
 
 const SSBox = styled.div`
-  width: 100rem;
-  height: 50rem;
-  margin-top: 2.1%;
+  padding-top: 5rem;
   background-color: #fff3d4;
   display: flex;
   flex-direction: column;
+  padding: 0 6rem;
 `;
 
 const CpSlide = styled.div`
@@ -132,27 +120,28 @@ const CpSlide = styled.div`
   margin: auto;
 `;
 
-const StText = styled.h4`
+const StText = styled.h3`
   color: black;
-  margin-left: 10rem;
-  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
 `;
 
 const Stimage = styled.img`
   width: 15rem;
   height: 4rem;
-  margin-left: 11rem;
+  margin: 0 auto;
+  margin-left: 1rem;
 `;
 
 const LeftImage = styled.img`
   width: 3rem;
   height: 3rem;
   margin-top: 10rem;
-  margin-left: 5rem;
+  margin-left: 1rem;
 `;
 
 const RightImage = styled.img`
   width: 3rem;
   height: 3rem;
-  margin-left: 27rem;
+  margin-left: 25rem;
+  /* margin-bottom: 3rem; */
 `;
